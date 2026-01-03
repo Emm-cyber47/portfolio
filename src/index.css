@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal reset and smoothness */
+html, body, #root { 
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body { 
+  @apply bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-100 antialiased;
+  overflow-x: hidden;
+}
+
+/* Remove any default margin from main sections */
+main, section {
+  width: 100%;
+}
